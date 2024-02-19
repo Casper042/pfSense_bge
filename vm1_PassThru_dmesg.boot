@@ -1,4 +1,8 @@
 # boot -v of Ubuntu QEMU VM with HP 331T Broadcom bge (all 4 ports) passed through and Virtual NIC removed.
+# System Tunables added as per https://docs.netgate.com/pfsense/en/latest/hardware/tune.html#broadcom-bge-4-cards
+# kern.ipc.nmbclusters	Broadcom1	1000000	 
+# hw.bge.tso_enable	Broadcom2	0	 
+# hw.pci.enable_msix	Broadcom3	0
 
 Copyright (c) 1992-2023 The FreeBSD Project.
 Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
